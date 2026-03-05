@@ -1,0 +1,56 @@
+# Dependencias
+node_modules/
+**/node_modules/
+
+# Variables de entorno (contienen credenciales)
+.env
+**/.env
+!.env.example
+!**/.env.example
+
+# Build / dist
+dist/
+build/
+**/dist/
+**/build/
+
+# Archivos subidos por usuarios
+server/uploads/*
+!server/uploads/.gitkeep
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+logs/
+
+# Cache
+.cache/
+.parcel-cache/
+.vite/
+**/.vite/
+
+# Editor / IDE
+.vscode/settings.json
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+
+# Claude Code
+.claude/
+
+# Sistema operativo
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Cobertura de tests
+coverage/
+*.lcov
+
+# Temporales
+*.tmp
+*.temp
