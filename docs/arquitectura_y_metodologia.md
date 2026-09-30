@@ -55,12 +55,12 @@ El sistema sigue una arquitectura de **tres capas clásica** (presentación – 
 └───────────────────────┼─────────────────────────────┘
                         │
         ┌───────────────▼──────────────────┐
-        │   Vite Dev Proxy  /api → :3001   │  (solo desarrollo)
+        │   Vite Dev Proxy  /api → :4000   │  (solo desarrollo)
         └───────────────┬──────────────────┘
                         │
 ┌───────────────────────▼─────────────────────────────┐
 │                 SERVIDOR BACKEND                     │
-│         Node.js + Express  (http://localhost:3001)   │
+│         Node.js + Express  (http://localhost:4000)   │
 │                                                     │
 │  ┌────────────┐  ┌────────────┐  ┌──────────────┐  │
 │  │  Rutas     │  │Controllers │  │  Middleware  │  │
@@ -191,7 +191,7 @@ planes/
 │
 └── client/                        ← Frontend React
     ├── package.json
-    ├── vite.config.js             ← Proxy /api → :3001
+    ├── vite.config.js             ← Proxy /api → :4000
     ├── tailwind.config.js
     │
     └── src/

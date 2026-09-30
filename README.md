@@ -106,7 +106,7 @@ cp .env.example .env
 4. Abre el archivo `.env` y edita los valores con tus credenciales:
 
 ```env
-PORT=3001
+PORT=4000
 
 DB_HOST=localhost
 DB_PORT=3306
@@ -132,7 +132,7 @@ npm run dev
 npm start
 ```
 
-El backend quedará disponible en: **http://localhost:3001**
+El backend quedará disponible en: **http://localhost:4000**
 
 ---
 
@@ -219,7 +219,7 @@ El frontend quedará disponible en: **http://localhost:5173**
 - Asegúrate de que la base de datos `sigepu` fue creada correctamente con `database.sql`
 
 **Puerto en uso**
-- Si el puerto 3001 está ocupado, cambia `PORT` en `server/.env`
+- Si el puerto 4000 está ocupado, cambia `PORT` en `server/.env`
 - Si el puerto 5173 está ocupado, Vite asignará automáticamente el siguiente disponible
 
 **Error `Cannot find module`**
